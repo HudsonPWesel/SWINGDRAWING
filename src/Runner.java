@@ -9,7 +9,7 @@ public class Runner {
 
         while (choice != 0) {
             // allow user to choose what to draw:
-            String[] options = { "Quit", "Emoji", "Rings", "Sunset", "Cube", "QR-Code", "Pie-Chart" }; // opposite order
+            String[] options = { "Quit", "Emoji", "Rings", "Sunset", "Cube", "Pie-Chart", "QR-Code" }; // opposite order
                                                                                                        // in buttons
 
             choice = JOptionPane.showOptionDialog(null,
@@ -23,7 +23,7 @@ public class Runner {
 
             // set the choihce in the display object:
             win.display.choice = choice;
-            System.out.println(choice);
+
             // show that result:
             win.display.repaint();
         }
